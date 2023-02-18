@@ -2,12 +2,245 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Softline</title>
+    <link rel="stylesheet" href="./public/css/normalize.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <div class="container">
+        <div class="header-main">
+          <div class="header-main__logo">
+            <a href="#" class="logo">
+              <img class="logo-img" src="/img/logo.svg" />
+            </a>
+          </div>
+          <div class="header-main__nav">
+            <a href="#" class="header-main__nav--link">Облачные решения</a>
+            <a href="#" class="header-main__nav--link">Кибербезопасность</a>
+            <a href="#" class="header-main__nav--link">Импортозамещение</a>
+            <a href="#" class="header-main__nav--link"
+              >Цифровая трансформация</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="container">
+        <div class="intro-content">
+          <p class="intro-title">
+            Поставщик услуг цифровой трансформации и кибербезопасности
+          </p>
+          <div class="intro-btn">
+            <a
+              href="https://softline.ru"
+              class="intro-btn__link"
+              target="_blank"
+              >На сайт</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <p class="about-title">
+            <span>Softline</span> – ведущий поставщик IT-решений и сервисов.*
+            Мы предлагаем комплексные IT-решения, облака, программное
+            и аппаратное обеспечение, решения по цифровой трансформации
+            и кибербезопасности, а также широкий спектр IT-услуг.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="container">
+        <div class="numbers-elements">
+          <div class="number-element">
+            <p class="number-element__title">> 30 лет</p>
+            <p class="number-element__subtitle">на IT-рынке</p>
+          </div>
+          <div class="number-element">
+            <p class="number-element__title">4600</p>
+            <p class="number-element__subtitle">сотрудников в России</p>
+          </div>
+          <div class="number-element">
+            <p class="number-element__title">25</p>
+            <p class="number-element__subtitle">городов России</p>
+          </div>
+          <div class="number-element">
+            <p class="number-element__title">2000 +</p>
+            <p class="number-element__subtitle">разработчиков</p>
+          </div>
+          <div class="number-element">
+            <p class="number-element__title">3000+</p>
+            <p class="number-element__subtitle">
+              сотрудников ежегодно <br />проходят оценку и обучение
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="office">
+      <div class="container">
+        <div class="office-content">
+          <div class="office-navbar dropdown_menu">
+            <div class="parent">
+              <a class="office-navbar-title" href="#">Офисы Softline</a>
+              <div class="submenu" style="min-height: auto;">
+                <div>
+                  <h3 href="#">Москва</h3>
+                </div>
+                <div>
+                  <h3 href="#">Центр</h3>
+                  <a href="#">Воронеж</a>
+                  <a href="#">Ярославль</a>
+                  <a href="#">Белгород</a>
+                </div>
+                <div>
+                  <h3 href="#">Северо-Запад</h3>
+                  <a href="#">Санкт-Петербург</a>
+                  <a href="#">Калининград</a>
+                </div>
+                <div>
+                  <h3 href="#">Юг</h3>
+                  <a href="#">Ростов-на-Дону</a>
+                  <a href="#">Краснодар</a>
+                  <a href="#">Волгоград</a>
+                </div>
+                <div>
+                  <h3 href="#">Волга</h3>
+                  <a href="#">Казань</a>
+                  <a href="#">Самара</a>
+                  <a href="#">Уфа</a>
+                  <a href="#">Оренбург</a>
+                  <a href="#">Нижний Новгород</a>
+                </div>
+                <div>
+                  <h3 href="#">Урал</h3>
+                  <a href="#">Екатеринбург</a>
+                  <a href="#">Челябинск</a>
+                  <a href="#">Пермь</a>
+                  <a href="#">Сургут</a>
+                  <a href="#">Тюмень</a>
+                  <a href="#">Ижевск</a>
+                </div>
+                <div>
+                  <h3 href="#">Сибирь</h3>
+                  <a href="#">Новосибирск</a>
+                  <a href="#">Омск</a>
+                  <a href="#">Томск</a>
+                  <a href="#">Красноярск</a>
+                  <a href="#">Иркутск</a>
+                </div>
+                <div>
+                  <h3 href="#">Дальний Восток</h3>
+                  <a href="#">Хабаровск</a>
+                  <a href="#">Владивосток</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="office-tabs">
+            <div class="office-tabs__items">
+                <button class=" tablinks office-tabs__link active" onclick="openCity(event, 'all')">Все</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'moscow')">Москва</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'center')">Центр</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'northwest')">Северо-Запад</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'south')">Юг</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'volga')">Волга</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'ural')">Урал</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'sibir')">Сибирь</button>
+                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'vostok')">Дальний восток</button>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="office-tabcontent">
+          <div id="all" class="tabcontent" style="display: block;">
+          <img class="tabcontent-img" src="./public/img/all.png" alt="all">
+        </div>
+
+        <div id="moscow" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/moscow.png" alt="moscow">
+        </div>
+
+        <div id="center" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/center.png" alt="center">
+        </div>
+
+        <div id="northwest" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/northwest.png" alt="northwest">
+        </div>
+
+        <div id="south" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/south.png" alt="south">
+        </div>
+
+        <div id="volga" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/volga.png" alt="volga">
+        </div>
+
+        <div id="ural" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/ural.png" alt="ural">
+        </div>
+
+        <div id="sibir" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/sibir.png" alt="sibir">
+        </div>
+
+        <div id="vostok" class="tabcontent">
+          <img class="tabcontent-img" src="./public/img/vostok.png" alt="vostok">
+        </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="container">
+        <div class="mission-content">
+          <h2 class="mission-title">Миссия Softline</h2>
+          <p class="mission-subtitle">Мы помогаем организациям трансформироваться, работать эффективно и безопасно  в условиях цифровой экономики.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="directions">
+      <div class="container">
+        <h2 class="directions_title">Направления бизнеса</h2>
+        <div class="directions-elements">
+          <div class="directions-element">
+            <img src="/img/item1.jpg" alt="item1" class="directions-img">
+          </div>
+          <div class="directions-element">
+            <img src="/img/item2.jpg" alt="item2" class="directions-img">
+          </div>
+          <div class="directions-element">
+            <img src="/img/item3.jpg" alt="item3" class="directions-img">
+          </div>
+          <div class="directions-element">
+            <img src="/img/item4.jpg" alt="item4" class="directions-img">
+          </div>
+          <div class="directions-element">
+            <img src="/img/item5.jpg" alt="item5" class="directions-img">
+          </div>
+          <div class="directions-element">
+            <img src="/img/item6.jpg" alt="item6" class="directions-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./public/js/scripts.js"></script>
   </body>
 </html>
