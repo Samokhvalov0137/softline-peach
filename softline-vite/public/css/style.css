@@ -1,22 +1,22 @@
 @font-face {
   font-family: "ProximaNovaCond";
   font-weight: 400;
-  src: url("/fonts/ProximaNovaCond-Regular.woff") format("woff"),
-    url("/fonts/ProximaNovaCond-Regular.woff2") format("woff2");
+  src: url("../fonts/ProximaNovaCond-Regular.woff") format("woff"),
+    url("../fonts/ProximaNovaCond-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "ProximaNovaCond";
   font-weight: 600;
-  src: url("/fonts/ProximaNovaCond-Semibold.woff") format("woff"),
-    url("/fonts/ProximaNovaCond-Semibold.woff2") format("woff2");
+  src: url("../fonts/ProximaNovaCond-Semibold.woff") format("woff"),
+    url("../fonts/ProximaNovaCond-Semibold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "ProximaNovaCond";
   font-weight: 700;
-  src: url("/fonts/ProximaNovaCond-Bold.woff") format("woff"),
-    url("/fonts/ProximaNovaCond-Bold.woff2") format("woff2");
+  src: url("../fonts/ProximaNovaCond-Bold.woff") format("woff"),
+    url("../fonts/ProximaNovaCond-Bold.woff2") format("woff2");
 }
 
 * {
