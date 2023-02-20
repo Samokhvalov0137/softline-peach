@@ -1,5 +1,3 @@
-console.log("hello world!!!")
-
 const toggleMenu = () => document.body.classList.toggle("open");
 
 function openCity(evt, cityName) {
@@ -15,3 +13,16 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+new Swiper('.swiper', {
+  loop: true,
+
+  navigation: {
+    nextEl: '.gallery-btn-next',
+    prevEl: '.gallery-btn-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }
+});

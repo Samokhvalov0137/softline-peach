@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Softline</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./public/css/normalize.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
@@ -14,7 +18,7 @@
         <div class="header-main">
           <div class="header-main__logo">
             <a href="#" class="logo">
-              <img class="logo-img" src="/img/logo.svg" />
+              <img class="logo-img" src="./public/img/logo.svg" />
             </a>
           </div>
           <div class="header-main__nav">
@@ -95,7 +99,7 @@
           <div class="office-navbar dropdown_menu">
             <div class="parent">
               <a class="office-navbar-title" href="#">Офисы Softline</a>
-              <div class="submenu" style="min-height: auto;">
+              <div class="submenu" style="min-height: auto">
                 <div>
                   <h3 href="#">Москва</h3>
                 </div>
@@ -151,58 +155,133 @@
           </div>
           <div class="office-tabs">
             <div class="office-tabs__items">
-                <button class=" tablinks office-tabs__link active" onclick="openCity(event, 'all')">Все</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'moscow')">Москва</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'center')">Центр</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'northwest')">Северо-Запад</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'south')">Юг</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'volga')">Волга</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'ural')">Урал</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'sibir')">Сибирь</button>
-                <button class=" tablinks office-tabs__link" onclick="openCity(event, 'vostok')">Дальний восток</button>
+              <button
+                class="tablinks office-tabs__link active"
+                onclick="openCity(event, 'all')"
+              >
+                Все
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'moscow')"
+              >
+                Москва
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'center')"
+              >
+                Центр
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'northwest')"
+              >
+                Северо-Запад
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'south')"
+              >
+                Юг
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'volga')"
+              >
+                Волга
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'ural')"
+              >
+                Урал
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'sibir')"
+              >
+                Сибирь
+              </button>
+              <button
+                class="tablinks office-tabs__link"
+                onclick="openCity(event, 'vostok')"
+              >
+                Дальний восток
+              </button>
             </div>
           </div>
-          
         </div>
 
         <div class="office-tabcontent">
-          <div id="all" class="tabcontent" style="display: block;">
-          <img class="tabcontent-img" src="./public/img/all.png" alt="all">
-        </div>
+          <div id="all" class="tabcontent" style="display: block">
+            <img class="tabcontent-img" src="./public/img/all.png" alt="all" />
+          </div>
 
-        <div id="moscow" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/moscow.png" alt="moscow">
-        </div>
+          <div id="moscow" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/moscow.png"
+              alt="moscow"
+            />
+          </div>
 
-        <div id="center" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/center.png" alt="center">
-        </div>
+          <div id="center" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/center.png"
+              alt="center"
+            />
+          </div>
 
-        <div id="northwest" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/northwest.png" alt="northwest">
-        </div>
+          <div id="northwest" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/northwest.png"
+              alt="northwest"
+            />
+          </div>
 
-        <div id="south" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/south.png" alt="south">
-        </div>
+          <div id="south" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/south.png"
+              alt="south"
+            />
+          </div>
 
-        <div id="volga" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/volga.png" alt="volga">
-        </div>
+          <div id="volga" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/volga.png"
+              alt="volga"
+            />
+          </div>
 
-        <div id="ural" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/ural.png" alt="ural">
-        </div>
+          <div id="ural" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/ural.png"
+              alt="ural"
+            />
+          </div>
 
-        <div id="sibir" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/sibir.png" alt="sibir">
-        </div>
+          <div id="sibir" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/sibir.png"
+              alt="sibir"
+            />
+          </div>
 
-        <div id="vostok" class="tabcontent">
-          <img class="tabcontent-img" src="./public/img/vostok.png" alt="vostok">
+          <div id="vostok" class="tabcontent">
+            <img
+              class="tabcontent-img"
+              src="./public/img/vostok.png"
+              alt="vostok"
+            />
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
 
@@ -210,7 +289,10 @@
       <div class="container">
         <div class="mission-content">
           <h2 class="mission-title">Миссия Softline</h2>
-          <p class="mission-subtitle">Мы помогаем организациям трансформироваться, работать эффективно и безопасно  в условиях цифровой экономики.</p>
+          <p class="mission-subtitle">
+            Мы помогаем организациям трансформироваться, работать эффективно и
+            безопасно в условиях цифровой экономики.
+          </p>
         </div>
       </div>
     </section>
@@ -220,27 +302,234 @@
         <h2 class="directions_title">Направления бизнеса</h2>
         <div class="directions-elements">
           <div class="directions-element">
-            <img src="/img/item1.jpg" alt="item1" class="directions-img">
+            <img src="/img/item1.jpg" alt="item1" class="directions-img" />
+            <span class="directions-background">
+              <p class="directions-title">Решения Softline</p>
+              <p class="directions-description">
+                ГК Softline предлагает клиентам собственную линейку оборудования
+                (ПК, серверы, торговое оборудование и проч.), разработку
+                программных продуктов, облачных решений, решений в области
+                информационной безопасности.
+              </p>
+            </span>
           </div>
           <div class="directions-element">
-            <img src="/img/item2.jpg" alt="item2" class="directions-img">
+            <img src="/img/item2.jpg" alt="item2" class="directions-img" />
+            <span class="directions-background">
+              <p class="directions-title">Кибербезопасность</p>
+              <p class="directions-description">
+                Softline обладает всеми необходимыми государственными лицензиями
+                для организации проектов по информационной безопасности и
+                аттестации.
+              </p>
+            </span>
           </div>
           <div class="directions-element">
-            <img src="/img/item3.jpg" alt="item3" class="directions-img">
+            <img src="/img/item3.jpg" alt="item3" class="directions-img" />
+            <span class="directions-background">
+              <p class="directions-title">Импортозамещение</p>
+              <p class="directions-description">
+                ГК Softline обладает широчайшим портфелем решений и услуг для
+                импортозамещения, включая ПО и оборудование собственного
+                производства.
+              </p>
+            </span>
           </div>
           <div class="directions-element">
-            <img src="/img/item4.jpg" alt="item4" class="directions-img">
+            <img src="/img/item4.jpg" alt="item4" class="directions-img" />
+            <span class="directions-background">
+              <p class="directions-title">Облачные решения</p>
+              <p class="directions-description">
+                Softline использует современные облачные решения как российских,
+                так и международных вендоров для масштабирования бизнеса своих
+                клиентов. Подписки, услуги, трансформация.
+              </p>
+            </span>
           </div>
           <div class="directions-element">
-            <img src="/img/item5.jpg" alt="item5" class="directions-img">
+            <img src="/img/item5.jpg" alt="item5" class="directions-img" />
+            <span class="directions-background">
+              <p class="directions-title">
+                Цифровая трансформация и разработка ПО
+              </p>
+              <p class="directions-description">
+                Softline использует современные технологи и новые возможности
+                для увеличения производительности бизнеса заказчика. В штате ГК
+                Softline - 2000+ разработчиков, которые трансформируют ПО под
+                нужды конкретного предприятия.
+              </p>
+            </span>
           </div>
           <div class="directions-element">
-            <img src="/img/item6.jpg" alt="item6" class="directions-img">
+            <img src="/img/item6.jpg" alt="item6" class="directions-img" />
+            <span class="directions-background">
+              <p class="directions-title">Техническая поддержка Softline</p>
+              <p class="directions-description">
+                200+ инженеров, 24 часа в сутки, 7 дней в неделю, 12 месяцев в
+                году, сервисное партнерство с 30+ мировыми производителями.
+              </p>
+            </span>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits-content">
+          <div class="benefits-top">
+            <h2 class="benefits-title">Компенсационный пакет</h2>
+            <div class="benefits-content-elements">
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits1.svg"
+                    alt="benefits1"
+                  />
+                </div>
+                <p class="benefits-content-title">Дмс</p>
+              </div>
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits2.svg"
+                    alt="benefits2"
+                  />
+                </div>
+                <p class="benefits-content-title">Выходной в день рождения</p>
+              </div>
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits3.svg"
+                    alt="benefits3"
+                  />
+                </div>
+                <p class="benefits-content-title">
+                  Корпоративная мобильная связь
+                </p>
+              </div>
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits4.svg"
+                    alt="benefits4"
+                  />
+                </div>
+                <p class="benefits-content-title">
+                  Корпоративные скидки на спорт
+                </p>
+              </div>
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits5.svg"
+                    alt="benefits5"
+                  />
+                </div>
+                <p class="benefits-content-title">LTI</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-underline"></div>
+          <div class="benefits-bottom">
+            <h2 class="benefits-subtitle">
+              Программа дополнительной мотивации
+              <span>доплата 12% от суммы</span>
+            </h2>
+            <div class="benefits-content-elements">
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits6.svg"
+                    alt="benefits6"
+                  />
+                </div>
+                <p class="benefits-content-title">Оргтехники</p>
+              </div>
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits1.svg"
+                    alt="benefits1"
+                  />
+                </div>
+                <p class="benefits-content-title">Дмс</p>
+              </div>
+              <div class="benefits-content-element">
+                <div class="benefits-content-ring">
+                  <img
+                    class="benefits-content-img"
+                    src="/img/benefits7.svg"
+                    alt="benefits7"
+                  />
+                </div>
+                <p class="benefits-content-title">Ипотеки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery-content">
+          <h2 class="gallery-title">Корпоративная жизнь</h2>
+          <div class="gallery-btn">
+            <div class="gallery-btn-prev">
+              <img class="gallery-img" src="/img/prev.svg" alt="prev" />
+            </div>
+            <div class="gallery-btn-next">
+              <img class="gallery-img" src="/img/next.svg" alt="next" />
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="swiper-slide-img"
+                  src="/img/slide1.jpg"
+                  alt="slide1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide-img"
+                  src="/img/slide2.jpg"
+                  alt="slide2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide-img"
+                  src="/img/slide3.jpg"
+                  alt="slide3"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide-img"
+                  src="/img/slide4.jpg"
+                  alt="slide4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide-img"
+                  src="/img/slide5.jpg"
+                  alt="slide5"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./public/js/scripts.js"></script>
   </body>
 </html>
