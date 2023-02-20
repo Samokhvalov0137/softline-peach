@@ -84,7 +84,7 @@
 }
 
 .intro {
-  background-image: url("/img/intro.jpg");
+  background-image: url("../img/intro.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1250px;
@@ -343,7 +343,7 @@
 }
 
 .mission {
-  background-image: url("/img/mission.jpg");
+  background-image: url("../img/mission.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1250px;
