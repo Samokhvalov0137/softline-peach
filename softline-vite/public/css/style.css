@@ -336,10 +336,11 @@
 
 .tabcontent {
   display: none;
+  padding: 0 30px;
 }
 
 .tabcontent-img {
-  max-width: 1190px;
+  width: 100%;
 }
 
 .mission {
