@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Softline</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./public/css/normalize.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
@@ -16,7 +18,7 @@
         <div class="header-main">
           <div class="header-main__logo">
             <a href="#" class="logo">
-              <img class="logo-img" src="./public/img/logo.svg" />
+              <img class="logo-img" src="./public/img/logo.svg" alt="logo" />
             </a>
           </div>
           <div class="header-main__nav">
@@ -94,59 +96,74 @@
     <section class="office">
       <div class="container">
         <div class="office-content">
-          <div class="office-navbar dropdown_menu">
+          <div class="office-navbar dropdown-menu">
             <div class="parent">
               <a class="office-navbar-title" href="#">Офисы Softline</a>
-              <div class="submenu" style="min-height: auto">
-                <div>
-                  <h3 href="#">Москва</h3>
+              <div class="submenu">
+                <div class="submenu-item">
+                  <h3>Москва</h3>
+                  <div class="submenu-dropdown"></div>
                 </div>
-                <div>
-                  <h3 href="#">Центр</h3>
-                  <a href="#">Воронеж</a>
-                  <a href="#">Ярославль</a>
-                  <a href="#">Белгород</a>
+                <div class="submenu-item">
+                  <h3>Центр</h3>
+                  <div class="submenu-dropdown">
+                    <a href="#">Воронеж</a>
+                    <a href="#">Ярославль</a>
+                    <a href="#">Белгород</a>
+                  </div>
                 </div>
-                <div>
-                  <h3 href="#">Северо-Запад</h3>
-                  <a href="#">Санкт-Петербург</a>
-                  <a href="#">Калининград</a>
+                <div class="submenu-item">
+                  <h3>Северо-Запад</h3>
+                  <div class="submenu-dropdown">
+                    <a href="#">Санкт-Петербург</a>
+                    <a href="#">Калининград</a>
+                  </div>
                 </div>
-                <div>
-                  <h3 href="#">Юг</h3>
-                  <a href="#">Ростов-на-Дону</a>
-                  <a href="#">Краснодар</a>
-                  <a href="#">Волгоград</a>
+                <div class="submenu-item">
+                  <h3>Юг</h3>
+                  <div class="submenu-dropdown">
+                    <a href="#">Ростов-на-Дону</a>
+                    <a href="#">Краснодар</a>
+                    <a href="#">Волгоград</a>
+                  </div>
                 </div>
-                <div>
-                  <h3 href="#">Волга</h3>
-                  <a href="#">Казань</a>
-                  <a href="#">Самара</a>
-                  <a href="#">Уфа</a>
-                  <a href="#">Оренбург</a>
-                  <a href="#">Нижний Новгород</a>
+                <div class="submenu-item">
+                  <h3>Волга</h3>
+                  <div class="submenu-dropdown">
+                    <a href="#">Казань</a>
+                    <a href="#">Самара</a>
+                    <a href="#">Уфа</a>
+                    <a href="#">Оренбург</a>
+                    <a href="#">Нижний Новгород</a>
+                  </div>
                 </div>
-                <div>
-                  <h3 href="#">Урал</h3>
-                  <a href="#">Екатеринбург</a>
-                  <a href="#">Челябинск</a>
-                  <a href="#">Пермь</a>
-                  <a href="#">Сургут</a>
-                  <a href="#">Тюмень</a>
-                  <a href="#">Ижевск</a>
+                <div class="submenu-item">
+                  <h3>Урал</h3>
+                  <div class="submenu-dropdown">
+                    <a href="#">Екатеринбург</a>
+                    <a href="#">Челябинск</a>
+                    <a href="#">Пермь</a>
+                    <a href="#">Сургут</a>
+                    <a href="#">Тюмень</a>
+                    <a href="#">Ижевск</a>
+                  </div>
                 </div>
-                <div>
-                  <h3 href="#">Сибирь</h3>
-                  <a href="#">Новосибирск</a>
-                  <a href="#">Омск</a>
-                  <a href="#">Томск</a>
-                  <a href="#">Красноярск</a>
-                  <a href="#">Иркутск</a>
+                <div class="submenu-item">
+                  <h3>Сибирь</h3>
+                  <div class="submenu-dropdown">
+                    <a href="#">Новосибирск</a>
+                    <a href="#">Омск</a>
+                    <a href="#">Томск</a>
+                    <a href="#">Красноярск</a>
+                    <a href="#">Иркутск</a>
+                  </div>
                 </div>
-                <div>
-                  <h3 href="#">Дальний Восток</h3>
-                  <a href="#">Хабаровск</a>
-                  <a href="#">Владивосток</a>
+                <div class="submenu-item">
+                  <h3>Дальний Восток</h3>
+                  <div class="submenu-dropdown">
+                    <a href="#">Хабаровск</a>
+                    <a href="#">Владивосток</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -297,10 +314,14 @@
 
     <section class="directions">
       <div class="container">
-        <h2 class="directions_title">Направления бизнеса</h2>
+        <h2 class="directions-title">Направления бизнеса</h2>
         <div class="directions-elements">
           <div class="directions-element">
-            <img src="./public/img/item1.jpg" alt="item1" class="directions-img" />
+            <img
+              src="./public/img/item1.jpg"
+              alt="item1"
+              class="directions-img"
+            />
             <div class="directions-background">
               <p class="directions-title">Решения Softline</p>
               <p class="directions-description">
@@ -312,7 +333,11 @@
             </div>
           </div>
           <div class="directions-element">
-            <img src="./public/img/item2.jpg" alt="item2" class="directions-img" />
+            <img
+              src="./public/img/item2.jpg"
+              alt="item2"
+              class="directions-img"
+            />
             <div class="directions-background">
               <p class="directions-title">Кибербезопасность</p>
               <p class="directions-description">
@@ -323,7 +348,11 @@
             </div>
           </div>
           <div class="directions-element">
-            <img src="./public/img/item3.jpg" alt="item3" class="directions-img" />
+            <img
+              src="./public/img/item3.jpg"
+              alt="item3"
+              class="directions-img"
+            />
             <div class="directions-background">
               <p class="directions-title">Импортозамещение</p>
               <p class="directions-description">
@@ -334,7 +363,11 @@
             </div>
           </div>
           <div class="directions-element">
-            <img src="./public/img/item4.jpg" alt="item4" class="directions-img" />
+            <img
+              src="./public/img/item4.jpg"
+              alt="item4"
+              class="directions-img"
+            />
             <div class="directions-background">
               <p class="directions-title">Облачные решения</p>
               <p class="directions-description">
@@ -345,7 +378,11 @@
             </div>
           </div>
           <div class="directions-element">
-            <img src="./public/img/item5.jpg" alt="item5" class="directions-img" />
+            <img
+              src="./public/img/item5.jpg"
+              alt="item5"
+              class="directions-img"
+            />
             <div class="directions-background">
               <p class="directions-title">
                 Цифровая трансформация и разработка ПО
@@ -359,7 +396,11 @@
             </div>
           </div>
           <div class="directions-element">
-            <img src="./public/img/item6.jpg" alt="item6" class="directions-img" />
+            <img
+              src="./public/img/item6.jpg"
+              alt="item6"
+              class="directions-img"
+            />
             <div class="directions-background">
               <p class="directions-title">Техническая поддержка Softline</p>
               <p class="directions-description">
@@ -492,31 +533,36 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="swiper-slide-img"
+                <img
+                  class="swiper-slide-img"
                   src="./public/img/slide1.jpg"
                   alt="slide1"
                 />
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide-img"
+                <img
+                  class="swiper-slide-img"
                   src="./public/img/slide2.jpg"
                   alt="slide2"
                 />
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide-img"
+                <img
+                  class="swiper-slide-img"
                   src="./public/img/slide3.jpg"
                   alt="slide3"
                 />
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide-img"
+                <img
+                  class="swiper-slide-img"
                   src="./public/img/slide4.jpg"
                   alt="slide4"
                 />
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide-img"
+                <img
+                  class="swiper-slide-img"
                   src="./public/img/slide5.jpg"
                   alt="slide5"
                 />
