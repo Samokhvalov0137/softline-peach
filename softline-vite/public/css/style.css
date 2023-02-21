@@ -27,8 +27,8 @@
 }
 
 .container {
-  max-width: 1250px;
-  /* padding: 0 15px; */
+  max-width: 1220px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -43,13 +43,12 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  max-height: 0;
 }
 
 .header-main__nav--link {
   display: inline-block;
   position: relative;
-  padding: 11.5px 5px;
+  padding: 0px 5px;
   text-decoration: none;
   margin-right: 10px;
   font-weight: 600;
@@ -60,7 +59,7 @@
   cursor: default;
 }
 
-.header-main__nav--link:nth-last-child(1){
+.header-main__nav--link:nth-last-child(1) {
   margin-right: 0;
   padding-right: 0;
 }
@@ -81,6 +80,10 @@
 .header-main__nav--link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.logo-img {
+  width: 125px;
 }
 
 .intro {
@@ -164,8 +167,8 @@
 }
 
 /* .number-element:nth-child(2) {
-  margin: 0 185px;
-} */
+    margin: 0 185px;
+  } */
 
 .number-element__title {
   font-weight: 600;
@@ -519,21 +522,20 @@
   margin: 70px 30px;
 }
 
-
-.gallery{
+.gallery {
   margin-bottom: 102px;
 }
 
-.gallery-content{
+.gallery-content {
   padding: 0 70px;
 }
 
-.swiper{
+.swiper {
   margin-top: 50px;
 }
 
-.swiper-pagination{
-  bottom: -30px!important;
+.swiper-pagination {
+  bottom: -30px !important;
 }
 .swiper-pagination-bullet {
   width: 214px;
@@ -548,8 +550,8 @@
   height: 6px;
 }
 
-.gallery-content{
-position: relative;
+.gallery-content {
+  position: relative;
 }
 
 .gallery-title {
@@ -559,23 +561,487 @@ position: relative;
   color: #444444;
 }
 
-.gallery-btn{
+.gallery-btn {
   display: flex;
   position: absolute;
   top: 10px;
   right: 70px;
 }
 
-.gallery-img{
+.gallery-img {
   margin: 0 10px;
 }
 
-.gallery-img:hover{
+.gallery-img:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-.swiper-slide-img{
+.swiper-slide-img {
   max-width: 1110px;
+}
 
+@media screen and (max-width: 1060px) {
+  .office-content {
+    padding: 29px 20px;
+  }
+  .office-navbar-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-main__nav--link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header-main__nav--link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .header-main__nav {
+    margin-left: 30px;
+  }
+
+  .intro {
+    height: 500px;
+  }
+
+  .intro-content {
+    padding: 100px 0;
+  }
+
+  .intro-title {
+    font-size: 46px;
+  }
+
+  .about {
+    margin: 60px 0px 50px;
+  }
+
+  .about-content {
+    padding: 80px 90px;
+    margin: 0px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .numbers-elements {
+    padding: 0px 45px;
+  }
+
+  .number-element {
+    padding: 30px;
+  }
+
+  .number-element__title {
+    font-size: 60px;
+  }
+
+  .office-content {
+    padding: 20px 20px;
+  }
+
+  .office-navbar-title {
+    font-size: 17px;
+  }
+
+  .office-tabs__link {
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0 4px;
+  }
+
+  .office-tabs__link.active {
+    text-underline-offset: 28px;
+  }
+
+  .mission-content {
+    padding: 60px 25px;
+  }
+
+  .mission-title {
+    font-size: 42px;
+  }
+
+  .mission-subtitle {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header-main {
+    padding: 16px 0px;
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .header-main__nav {
+    margin-left: 0px;
+    margin-top: 16px;
+    justify-content: space-between;
+  }
+
+  .header-main__nav--link {
+    padding: 0;
+  }
+
+  .intro {
+    height: 400px;
+  }
+
+  .intro-content {
+    padding: 60px 30px 60px 0;
+  }
+
+  .intro-title {
+    font-size: 36px;
+  }
+
+  .about {
+    margin: 60px 0px 50px;
+  }
+
+  .about-content {
+    padding: 45px 30px;
+    margin: 0px;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .numbers-elements {
+    padding: 0px 35px;
+  }
+
+  .number-element {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .number-element__title {
+    font-size: 45px;
+  }
+
+  .number-element__subtitle {
+    font-size: 17px;
+  }
+
+  .office-content {
+    padding: 20px 5px;
+    flex-direction: column;
+  }
+
+  .office-tabs__items {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .office-tabs__items::-webkit-scrollbar {
+    display: none;
+  }
+
+  .office-navbar-title {
+    font-size: 20px;
+  }
+
+  .office-tabs {
+    margin-top: 20px;
+  }
+
+  .office-tabs__link {
+    font-size: 16px;
+    padding: 0 8px;
+    white-space: nowrap;
+  }
+
+  .office-tabs__link.active {
+    text-underline-offset: 3px;
+  }
+
+  .office-tabcontent {
+    overflow-x: auto;
+  }
+
+  .office-tabcontent::-webkit-scrollbar {
+    display: none;
+  }
+  .tabcontent-img {
+    width: 1000px;
+  }
+
+  .mission-content {
+    padding: 40px 15px;
+  }
+
+  .mission-title {
+    font-size: 35px;
+  }
+
+  .mission-subtitle {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .header-main__nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(max-content, max-content));
+    gap: 10px;
+    justify-items: start;
+  }
+
+  .header-main__nav--link {
+    margin: 0;
+  }
+
+  .intro {
+    height: 300px;
+  }
+
+  .intro-content {
+    padding: 40px 0 76px;
+  }
+
+  .intro-title {
+    font-size: 28px;
+  }
+
+  .intro-btn {
+    margin-top: 26.5px;
+  }
+
+  .intro-btn__link {
+    padding: 6.5px 25.5px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .about {
+    margin: 60px 0px 50px;
+  }
+
+  .about-content {
+    padding: 24px 5px;
+    margin: 0px;
+  }
+
+  .about-title {
+    font-size: 16px;
+  }
+
+  .numbers-elements {
+    padding: 0px 5px;
+  }
+
+  .number-element {
+    padding: 4px;
+    text-align: center;
+  }
+
+  .number-element__title {
+    font-size: 40px;
+  }
+
+  .number-element__subtitle {
+    font-size: 16px;
+  }
+
+  .office-content {
+    padding: 20px 5px;
+    flex-direction: column;
+  }
+
+  .office-tabs__items {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .office-tabs__items::-webkit-scrollbar {
+    display: none;
+  }
+
+  .office-navbar-title {
+    font-size: 20px;
+  }
+
+  .office-tabs {
+    margin-top: 20px;
+  }
+
+  .office-tabs__link {
+    font-size: 16px;
+    padding: 0 8px;
+    white-space: nowrap;
+  }
+
+  .mission-content {
+    padding: 32px 5px;
+  }
+
+  .mission-title {
+    font-size: 28px;
+  }
+
+  .mission-subtitle {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .directions_title{
+    font-size: 28px;
+  }
+
+  .directions-elements {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+.directions-img {
+    height: 60px;
+    object-fit: cover;
+  }
+
+  .open .directions-img {
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .directions-background {
+    padding: 20px 40px 20px 10px;
+    top: 0px;
+    height: 95%;
+  } 
+  
+  .open .directions-background {
+    
+    top: 0px;
+    height: 98%;
+  } 
+
+  .directions-title {
+    font-size: 20px;
+    padding-bottom: 40px;
+  }
+
+  .open .directions-title {
+    padding-bottom: 10px;
+  }
+
+    .directions-description {
+    font-size: 16px;
+    padding-right: 0px;
+  }
+
+  .directions-element:hover .directions-img {
+    transform: scale(1);
+  }
+
+  
+   .directions-element:hover .open .directions-background {
+    top: -5px;
+  }
+
+  .directions-element .directions-title::after {
+    content: "";
+  
+    color: #fff;
+    position: absolute;
+    top: 27px;
+    right: 24px;
+    transform: translateY(-50%) rotate(0deg);
+  
+    width: 22px;
+    height: 22px;
+    background: url(../img/downAccord.svg) no-repeat center;
+    background-size: 16px;
+  
+    transition: all 0.2s linear;
+  }
+
+  .open .directions-title::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+
+  .benefits {
+    margin: 50px 0px 55px;
+}
+
+.benefits-content {
+    margin: 0;
+    padding: 24px 0;
+}
+
+.benefits-top {
+    padding: 0 5px;
+}
+
+.benefits-title {
+    font-size: 28px;
+}
+
+
+.benefits-content-element {
+    width: 120px;
+}
+
+.benefits-underline {
+    margin: 24px 20px;
+}
+
+.benefits-bottom {
+    padding: 0 5px;
+}
+
+.benefits-subtitle {
+    font-size: 22px;
+}
+
+.gallery {
+    margin-bottom: 49px;
+}
+
+
+.gallery-btn {
+    display: none;
+}
+
+.gallery-content {
+    padding: 0;
+}
+
+.gallery-title {
+    font-size: 28px;
+}
+
+.swiper-slide-img {
+    max-width: 1110px;
+    height: 210px;
+}
+
+.swiper-pagination {
+    display: none;
+}
 }

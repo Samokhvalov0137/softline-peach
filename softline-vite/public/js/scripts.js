@@ -26,3 +26,12 @@ new Swiper('.swiper', {
     clickable: true,
   }
 });
+
+
+const accordion = document.getElementsByClassName('directions-element');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('open')
+  })
+}
